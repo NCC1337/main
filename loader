@@ -1,0 +1,6 @@
+local ids = {2202352383}
+if table.find(ids) then
+    loadstring(game:HttpGet(""))()
+else
+    game.Players.LocalPlayer:Kick('game not supported')
+end
