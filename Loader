@@ -1,6 +1,10 @@
 local ids = {2202352383}
 if table.find(ids, game.PlaceId) then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/NCC1337/main/main/'..game.PlaceId))()
+    loadstring(game:HttpGet('https://pastebin.com/raw/y3dtiKwH'))()
+    local lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local win = lib:MakeWindow({Name = "Key-System", HidePremium = true, SaveConfig = false, IntroEnabled = false})
+    local Tab = win:MakeTab({Name = "Key",Icon = "rbxassetid://4483345998",PremiumOnly = false})
+    Tab:AddTextbox({Name = "Enter key",Default = "",TextDisappear = true,Callback = function(Value)if Value == getgenv().key then loadstring(game:HttpGet('https://raw.githubusercontent.com/NCC1337/main/main/'..game.PlaceId))() lib:MakeNotification({Name = "Script",Content = "Loading...",Image = "rbxassetid://4483345998",Time = 3}) wait(1) lib:Destroy() else lib:MakeNotification({Name = "Script",Content = "Incorrect key!",Image = "rbxassetid://4483345998",Time = 3}) end end      })
 else
     game.Players.LocalPlayer:Kick('game not supported')
 end
