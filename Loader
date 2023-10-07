@@ -1,6 +1,6 @@
 local ids = {2202352383}
-if table.find(ids) then
-    loadstring(game:HttpGet(""))()
+if table.find(ids, game.PlaceId) then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NCC1337/main/main/'..game.PlaceId))()
 else
     game.Players.LocalPlayer:Kick('game not supported')
 end
