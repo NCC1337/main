@@ -1,1 +1,1 @@
-print('script...')
+loadstring(game:HttpGet('https://raw.githubusercontent.com/NCC1337/Sky/main/main'))()
